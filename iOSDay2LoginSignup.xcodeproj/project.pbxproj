@@ -14,6 +14,7 @@
 		8432511822C6CA32009C729E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8432511622C6CA32009C729E /* LaunchScreen.storyboard */; };
 		8432512022C6D761009C729E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8432511F22C6D761009C729E /* HomeViewController.swift */; };
 		8432512222C6DC47009C729E /* userViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8432512122C6DC47009C729E /* userViewController.swift */; };
+		8432512522C6EF78009C729E /* StudentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8432512422C6EF78009C729E /* StudentDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8432511922C6CA32009C729E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8432511F22C6D761009C729E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8432512122C6DC47009C729E /* userViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userViewController.swift; sourceTree = "<group>"; };
+		8432512422C6EF78009C729E /* StudentDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		8432510C22C6CA31009C729E /* iOSDay2LoginSignup */ = {
 			isa = PBXGroup;
 			children = (
+				8432512322C6EF5B009C729E /* myClasses */,
 				8432510D22C6CA31009C729E /* AppDelegate.swift */,
 				8432510F22C6CA31009C729E /* loginViewController.swift */,
 				8432511122C6CA31009C729E /* Main.storyboard */,
@@ -68,6 +71,14 @@
 				8432511922C6CA32009C729E /* Info.plist */,
 			);
 			path = iOSDay2LoginSignup;
+			sourceTree = "<group>";
+		};
+		8432512322C6EF5B009C729E /* myClasses */ = {
+			isa = PBXGroup;
+			children = (
+				8432512422C6EF78009C729E /* StudentDetails.swift */,
+			);
+			path = myClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +155,7 @@
 				8432511022C6CA31009C729E /* loginViewController.swift in Sources */,
 				8432512222C6DC47009C729E /* userViewController.swift in Sources */,
 				8432510E22C6CA31009C729E /* AppDelegate.swift in Sources */,
+				8432512522C6EF78009C729E /* StudentDetails.swift in Sources */,
 				8432512022C6D761009C729E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
