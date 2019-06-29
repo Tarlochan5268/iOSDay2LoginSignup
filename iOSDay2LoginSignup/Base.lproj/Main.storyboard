@@ -62,7 +62,7 @@
                                 <accessibility key="accessibilityConfiguration" hint="password"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bc-3s-zXf">
                                 <rect key="frame" x="20" y="467" width="381" height="21"/>
@@ -89,17 +89,37 @@
         <!--User View Controller-->
         <scene sceneID="eZp-Xt-ixl">
             <objects>
-                <viewController id="e00-Uj-CnX" customClass="userViewController" customModule="iOSDay2LoginSignup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userVC" id="e00-Uj-CnX" customClass="userViewController" customModule="iOSDay2LoginSignup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FuC-vQ-UMH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zem-73-CGm">
+                                <rect key="frame" x="20" y="139" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="375" translatesAutoresizingMaskIntoConstraints="NO" id="PLf-4L-GVD">
+                                <rect key="frame" x="20" y="223" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="k66-ek-aGy"/>
                     </view>
+                    <connections>
+                        <outlet property="lblEmail" destination="zem-73-CGm" id="F6L-fu-LKr"/>
+                        <outlet property="lblPassword" destination="PLf-4L-GVD" id="SsN-au-H4F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLy-LJ-M3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2449" y="311"/>
+            <point key="canvasLocation" x="2447.826086956522" y="310.71428571428572"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="02z-Bv-pEt">

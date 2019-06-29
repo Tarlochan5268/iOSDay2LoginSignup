@@ -10,9 +10,15 @@ import UIKit
 
 class userViewController: UIViewController {
 
+    @IBOutlet weak var lblPassword: UILabel!
+    @IBOutlet weak var lblEmail: UILabel!
+    var emailId : String?
+    var password : String?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.lblEmail.text = emailId
+        self.lblPassword.text = password
+        self.title = "User Details"
         // Do any additional setup after loading the view.
     }
     

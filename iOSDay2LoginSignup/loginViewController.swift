@@ -29,18 +29,27 @@ class loginViewController: UIViewController {
             if getPassword == password
             {
                 lblDisplay.text = "Logged in Correct Details"
-                let alertControl = UIAlertController(title: "Message", message: "Logged in Correct Details", preferredStyle: .actionSheet)
+                //let alertControl = UIAlertController(title: "Message", message: "Logged in Correct Details", preferredStyle: .actionSheet)
                 
-                let actionOk = UIAlertAction(title: "Ok", style: .default, handler: nil)
-                let actionCancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-                let actionDestructive = UIAlertAction(title: "Destructive", style: .destructive, handler: nil)
+                //let actionOk = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                //let actionCancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                //let actionDestructive = UIAlertAction(title: "Destructive", style: .destructive, handler: nil)
                 
-                alertControl.addAction(actionOk)
-                alertControl.addAction(actionCancel)
-                alertControl.addAction(actionDestructive)
+                //alertControl.addAction(actionOk)
+                //alertControl.addAction(actionCancel)
+                //alertControl.addAction(actionDestructive)
                 
-                self .present(alertControl , animated: true , completion: nil)
+                //self .present(alertControl , animated: true , completion: nil)
                 
+                //STEP 1 //storyboard if of view controller
+                //STEP 2 //refrence of storyboard
+                let sb = UIStoryboard(name: "Main", bundle: nil)
+                //step 3 get refrence of  controller using stroyboard id
+                let userVC = sb.instantiateViewController(withIdentifier: "userVC") as! userViewController
+                userVC.emailId = self.txtfldEmail.text
+                userVC.password = self.txtfldPassword.text
+                //self .present(userVC , animated: true , completion: nil)
+                self.navigationController?.pushViewController(userVC, animated: true)
             }
             else
             {
