@@ -9,6 +9,7 @@
 import Foundation
 class StudentDetails
 {
+    //var username : String
     var studentId : String
     var firstName : String
     var lastName : String
@@ -25,6 +26,7 @@ class StudentDetails
     }
     init(studentId : String,firstName : String,lastName : String,gender : String,birthDate : Date)
     {
+        //self.username = username
         self.studentId = studentId
         self.firstName = firstName
         self.lastName = lastName
