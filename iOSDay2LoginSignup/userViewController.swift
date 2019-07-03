@@ -59,18 +59,9 @@ class userViewController: UIViewController {
         let studentObj : StudentDetails = StudentDetails(studentId: studentId, firstName: firstName, lastName: lastName, gender: gender, birthDate: birthDate)
         StudentDetails.addStudent(studentObj: studentObj)
         self.lblUserDetails.text = "Details stored. Now enter student id again and click on View Details Button to see your details"
-        /*
-        let studentObjGot = StudentDetails.getStudent(studentId: studentObj.studentId)
-        self.lblUserDetails.text = "\(studentObjGot!.studentId)+\(studentObjGot!.firstName)+\(studentObjGot!.lastName)+\(studentObjGot!.gender)+\(studentObjGot!.birthDate.getForamttedDate())"
-        */
     }
     
-    @IBAction func actionViewDetails(_ sender: Any)
-    {
-        var studentId : String = self.txtfldStudentId.text!
-        let studentObjGot = StudentDetails.getStudent(studentId: studentId)
-        self.lblUserDetails.text = "student Id : \(studentObjGot!.studentId) \nfirstName : \(studentObjGot!.firstName)\nlastName : \(studentObjGot!.lastName)\ngender : \(studentObjGot!.gender)\nbirthDate : \(studentObjGot!.birthDate.getForamttedDate())"
-    }
+
     
     /*
     // MARK: - Navigation

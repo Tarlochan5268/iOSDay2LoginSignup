@@ -15,6 +15,7 @@
 		8432512022C6D761009C729E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8432511F22C6D761009C729E /* HomeViewController.swift */; };
 		8432512222C6DC47009C729E /* userViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8432512122C6DC47009C729E /* userViewController.swift */; };
 		8432512522C6EF78009C729E /* StudentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8432512422C6EF78009C729E /* StudentDetails.swift */; };
+		84AA056F22CD0FCF005AD96A /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA056E22CD0FCF005AD96A /* UserDetailViewController.swift */; };
 		84B3CC4C22CBF65300F810AE /* Extension_Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3CC4B22CBF65300F810AE /* Extension_Date.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		8432511F22C6D761009C729E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8432512122C6DC47009C729E /* userViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userViewController.swift; sourceTree = "<group>"; };
 		8432512422C6EF78009C729E /* StudentDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetails.swift; sourceTree = "<group>"; };
+		84AA056E22CD0FCF005AD96A /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		84B3CC4B22CBF65300F810AE /* Extension_Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,7 @@
 				8432511422C6CA32009C729E /* Assets.xcassets */,
 				8432511622C6CA32009C729E /* LaunchScreen.storyboard */,
 				8432511922C6CA32009C729E /* Info.plist */,
+				84AA056E22CD0FCF005AD96A /* UserDetailViewController.swift */,
 			);
 			path = iOSDay2LoginSignup;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84AA056F22CD0FCF005AD96A /* UserDetailViewController.swift in Sources */,
 				8432511022C6CA31009C729E /* loginViewController.swift in Sources */,
 				8432512222C6DC47009C729E /* userViewController.swift in Sources */,
 				8432510E22C6CA31009C729E /* AppDelegate.swift in Sources */,
