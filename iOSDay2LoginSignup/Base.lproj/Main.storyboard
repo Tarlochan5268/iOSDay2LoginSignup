@@ -64,7 +64,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bc-3s-zXf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="           " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bc-3s-zXf">
                                 <rect key="frame" x="20" y="467" width="381" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -203,7 +203,7 @@
                                     <action selector="actionUserDetails:" destination="he0-WS-15c" eventType="touchUpInside" id="gjj-FE-diO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa9-C7-rmb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="            " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa9-C7-rmb">
                                 <rect key="frame" x="20" y="314" width="374" height="400"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -238,9 +238,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaI-zp-S2h">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaI-zp-S2h">
                                 <rect key="frame" x="156" y="259" width="103" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Open Login"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="DLJ-5p-vCd"/>
@@ -248,6 +247,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xBj-AO-jMl" firstAttribute="bottom" secondItem="FaI-zp-S2h" secondAttribute="bottom" constant="541" id="4df-HX-Yxh"/>
+                            <constraint firstItem="xBj-AO-jMl" firstAttribute="trailing" secondItem="FaI-zp-S2h" secondAttribute="trailing" constant="155" id="Mfu-RP-cjM"/>
+                            <constraint firstItem="FaI-zp-S2h" firstAttribute="top" secondItem="xBj-AO-jMl" secondAttribute="top" constant="171" id="Tjb-72-q98"/>
+                            <constraint firstItem="FaI-zp-S2h" firstAttribute="leading" secondItem="xBj-AO-jMl" secondAttribute="leading" constant="156" id="Vdj-IP-EM0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xBj-AO-jMl"/>
                     </view>
                     <navigationItem key="navigationItem" id="tVo-b3-3nq"/>
